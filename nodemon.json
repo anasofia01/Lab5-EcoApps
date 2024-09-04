@@ -1,0 +1,5 @@
+{
+	"watch": ["server/index.js"],
+	"ignore": ["client-drivers", "client-passangers"],
+	"exec": "node server/index.js"
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Passangers</title>
+		<link rel="stylesheet" href="index.css" />
+	</head>
+	<body>
+		<div class="container" id="div-login">
+			<h1>Login to your account</h1>
+			<form id="form-login">
+				<input type="text" id="name" name="name" placeholder="Enter your name" required />
+				<button type="submit">Login</button>
+			</form>
+		</div>
+
+		<div class="container" id="div-trip">
+			<h1>Drivers Available:</h1>
+			<div id="drivers"></div>
+			<br />
+			<form id="form-trip">
+				<input type="text" id="origin" name="origin" placeholder="Place your origin" required />
+				<input type="text" id="destination" name="destination" placeholder="Place your destination" required />
+				<button type="submit">Request Trip</button>
+			</form>
+			<p id="p-trip"></p>
+		</div>
+
+		<div class="container" id="div-init-trip">
+			<h1>Journey in progress...</h1>
+			<p id="p-init-trip"></p>
+			<br />
+			<div id="info-trip"></div>
+		</div>
+
+		<script
+			src="https://cdn.socket.io/4.7.5/socket.io.min.js"
+			integrity="sha384-2huaZvOR9iDzHqslqwpR87isEmrfxqyWOF7hr7BY6KG0+hVKLoEXMPUJw3ynWuhO"
+			crossorigin="anonymous"
+		></script>
+		<script src="index.js"></script>
+	</body>
+</html>

@@ -1,0 +1,25 @@
+{
+	"name": "server-practice",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start-server": "nodemon server/index.js",
+		"start-drivers": "live-server ./client-drivers --port=3000",
+		"start-passangers": "live-server ./client-passangers --port=3005"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"nodemon": "^3.1.4"
+	},
+	"dependencies": {
+		"cors": "^2.8.5",
+		"express": "^4.19.2",
+		"live-server": "^1.2.2",
+		"serve": "^14.2.3",
+		"socket.io": "^4.7.5"
+	}
+}

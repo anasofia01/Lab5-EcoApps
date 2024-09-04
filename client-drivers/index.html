@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Drivers</title>
+		<link rel="stylesheet" href="index.css" />
+	</head>
+	<body>
+		<div class="container" id="div-login">
+			<h1>Login to your account</h1>
+			<form id="form-login">
+				<input type="text" id="name" name="name" placeholder="Enter your name" required />
+				<button type="submit">Login</button>
+			</form>
+		</div>
+
+		<div class="container" id="div-car">
+			<h1>Select vehicle</h1>
+			<form id="form-car">
+				<input type="text" id="plate" name="plate" placeholder="Place the vehicle plate" required />
+				<button type="submit">Next</button>
+			</form>
+		</div>
+
+		<div class="container" id="div-car-status">
+			<h1 id="h1-car-status"></h1>
+			<div>
+				<button id="btn-active">Activate</button>
+			</div>
+			<br />
+
+			<div>
+				<button id="btn-inactive">Deactivate</button>
+			</div>
+			<br />
+
+			<div>
+				<p id="p-car-status"></p>
+			</div>
+		</div>
+
+		<div class="container" id="div-new-trip">
+			<h1>New Trip</h1>
+			<div id="trips"></div>
+		</div>
+
+		<div class="container" id="div-init-trip">
+			<h1>Journey in progress...</h1>
+			<div id="info-trip"></div>
+			<div>
+				<button id="btn-init-trip" type="button">Start Trip</button>
+				<button id="btn-finish-trip" type="button">End Trip</button>
+			</div>
+			<br />
+			<p id="p-init-trip"></p>
+		</div>
+
+		<script
+			src="https://cdn.socket.io/4.7.5/socket.io.min.js"
+			integrity="sha384-2huaZvOR9iDzHqslqwpR87isEmrfxqyWOF7hr7BY6KG0+hVKLoEXMPUJw3ynWuhO"
+			crossorigin="anonymous"
+		></script>
+		<script src="index.js"></script>
+	</body>
+</html>
